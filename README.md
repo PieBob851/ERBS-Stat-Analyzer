@@ -214,4 +214,11 @@ Average shielding:  7097.281543274244\
 Average damage:  14257.66527632951\
 Average damage taken:  15570.332638164755
 
-Surprisingly, the MMR gain is actually worse when Camilo is paired with a frontliner and a backliner as opposed to 2 backliners. This indicates that Camilo enables the average backliner more than the average other frontliner enables Camilo. This is supported by the average MMR gain for triple backline teams being only 55.62 (558 samples), which shows that having at least one frontliner to absorb damage helps most backliners in the ranked setting.\
+Surprisingly, the MMR gain is actually worse when Camilo is paired with a frontliner and a backliner as opposed to 2 backliners. This indicates that Camilo enables the average backliner more than the average other frontliner enables Camilo. This is supported by the average MMR gain for triple backline teams being only 55.62 (558 samples), which shows that having at least one frontliner to absorb damage helps most backliners in the ranked setting.
+
+
+# Conclusion
+
+Please play a support if you roll Camilo.
+
+Thank you.
