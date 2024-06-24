@@ -1,13 +1,13 @@
 # ERBS Stat Analyzer
 
-To download games using the downloader, an API key is needed. To learn more about the API, visit https://developer.eternalreturn.io/.\
+To download games using the downloader, an API key is needed. To learn more about the API, visit https://developer.eternalreturn.io/.
 
 
 # Analysis Methodology
 
-Using the Eternal Return API, 2947 games were downloaded from top Camilo players in both North America and Korea (roughly 500 games were from North America, and about 2500 were from Korea).\
+Using the Eternal Return API, 2947 games were downloaded from top Camilo players in both North America and Korea (roughly 500 games were from North America, and about 2500 were from Korea).
 
-Characters were then classified into the main role they may play in team compositions with Camilo. The list of all character classifications is as follows:\
+Characters were then classified into the main role they may play in team compositions with Camilo. The list of all character classifications is as follows:
 
 01 (Jackie): Diver\
 02 (Aya): Backline\
@@ -83,9 +83,9 @@ Characters were then classified into the main role they may play in team composi
 71 (Kenneth): Frontline\
 72 (Katja): Backline\
 73 (Charlotte): Support\
-74 (Darko): Frontline\
+74 (Darko): Frontline
 
-Using this, criteria for different compositions were created. For example, when determining the efficacy of Camilo in team compositions with a dedicated Tank, only teams in the downloaded games with both Camilo and any of the characters classified as "Tank" were added to the stats.\
+Using this, criteria for different compositions were created. For example, when determining the efficacy of Camilo in team compositions with a dedicated Tank, only teams in the downloaded games with both Camilo and any of the characters classified as "Tank" were added to the stats.
 
 Once all players meeting the criteria were added to the list of stats to consider, the average of various stats among all the players was output. The stats included were:\
 Average Game Rank\
@@ -98,9 +98,9 @@ Average deaths\
 Average healing\
 Average shielding\
 Average damage dealt\
-Average damage taken\
+Average damage taken
 
-Additionally, ONLY stats from ranked matches in Season 4 were considered to ensure stats were most comparable.\
+Additionally, ONLY stats from ranked matches in Season 4 were considered to ensure stats were most comparable.
 
 # Analysis Results
 
@@ -116,7 +116,7 @@ Average deaths:  2.4684014869888475\
 Average healing:  13258.940520446096\
 Average shielding:  7498.317843866171\
 Average damage:  15267.371282527882\
-Average damage taken:  16085.666356877324\
+Average damage taken:  16085.666356877324
 
 Camilo stats in team compositions with a dedicated Support (Leni, Johann, or Charlotte):\
 Total number of games meeting criteria:  256\
@@ -130,11 +130,11 @@ Average deaths:  2.390625\
 Average healing:  12779.01953125\
 Average shielding:  9610.85546875\
 Average damage:  19979.6171875\
-Average damage taken:  18622.92578125\
+Average damage taken:  18622.92578125
 
-As can be seen by these stats, dedicated supports offer a very significant benefit to Camilo performance, netting about a 6.8 increase in MMR gain on average, even with no other changes to the team composition considered. However, due to relatively low sample size, it is difficult to narrow team compositions further.\
+As can be seen by these stats, dedicated supports offer a very significant benefit to Camilo performance, netting about a 6.8 increase in MMR gain on average, even with no other changes to the team composition considered. However, due to relatively low sample size, it is difficult to narrow team compositions further.
 
-When further considering team compositions with support adjacent characters (Theodore, Priya, and Adina - characters who provide some shielding / healing utility, but not as the primary part of their kit), the stats drop noticably, however.\
+When further considering team compositions with support adjacent characters (Theodore, Priya, and Adina - characters who provide some shielding / healing utility, but not as the primary part of their kit), the stats drop noticably, however.
 
 Total number of games meeting criteria:  459\
 Average game rank:  4.20479302832244\
@@ -147,11 +147,11 @@ Average deaths:  2.411764705882353\
 Average healing:  12642.843137254902\
 Average shielding:  8754.333333333334\
 Average damage:  17824.57080610022\
-Average damage taken:  17405.9651416122\
+Average damage taken:  17405.9651416122
 
-The stats drop off noticeably in this case, indicating that Camilo much prefers characters dedicated to supporting him over characters who may provide utility on the side.\
+The stats drop off noticeably in this case, indicating that Camilo much prefers characters dedicated to supporting him over characters who may provide utility on the side.
 
-Additionally, upon taking a further look at these stats, Priya has 51 games in the sample set with 62.96 average MMR gain, and Adina has 38 total games with Camilo with a 66.07 average MMR gain, while Theodore has 120 total games and only 58.34 average MMR gain.\
+Additionally, upon taking a further look at these stats, Priya has 51 games in the sample set with 62.96 average MMR gain, and Adina has 38 total games with Camilo with a 66.07 average MMR gain, while Theodore has 120 total games and only 58.34 average MMR gain.
 
 Next, the stats for Camilo in team compositions with a dedicated Tank (see list in Methodology for specific characters) are as follows:\
 Total number of games meeting criteria:  331\
@@ -165,9 +165,9 @@ Average deaths:  2.2598187311178246\
 Average healing:  14042.70996978852\
 Average shielding:  7900.208459214501\
 Average damage:  16739.20241691843\
-Average damage taken:  16911.90332326284\
+Average damage taken:  16911.90332326284
 
-There is again a sizable increase in stats over the baseline. Compare this to the stats when there are simply 2 other frontliners, but not a "Tank" dedicated to taking damage and CCing enemies:\
+There is again a sizable increase in stats over the baseline. Compare this to the stats when there are simply 2 other frontliners, but not a "Tank" dedicated to taking damage and CCing enemies:
 
 Total number of games meeting criteria:  414\
 Average game rank:  4.282608695652174\
@@ -180,11 +180,11 @@ Average deaths:  2.5096618357487923\
 Average healing:  13710.487922705313\
 Average shielding:  7297.586956521739\
 Average damage:  15465.154589371981\
-Average damage taken:  16070.084541062803\
+Average damage taken:  16070.084541062803
 
-This indicates that Camilo also appreciates another character in the frontline taking the primary aggression from the enemy team, and setting up plays.\
+This indicates that Camilo also appreciates another character in the frontline taking the primary aggression from the enemy team, and setting up plays.
 
-Furthermore, this relationship is mutually beneficial - the average stats for tanks across games (4769 total tanks counted in stats) has only 59.61 average MMR gain. \
+Furthermore, this relationship is mutually beneficial - the average stats for tanks across games (4769 total tanks counted in stats) has only 59.61 average MMR gain. 
 
 Finally, to round out the different styles of compositions Camilo is played in, here are the stats for Camilo with 2 backliners:\
 Total number of games meeting criteria:  141\
@@ -198,7 +198,7 @@ Average deaths:  2.4468085106382977\
 Average healing:  13767.588652482269\
 Average shielding:  7307.702127659574\
 Average damage:  13841.425531914894\
-Average damage taken:  15587.241134751774\
+Average damage taken:  15587.241134751774
 
 And here are the stats with 2 frontliners and a backliner:\
 Total number of games meeting criteria:  959\
@@ -212,6 +212,6 @@ Average deaths:  2.553701772679875\
 Average healing:  13077.891553701773\
 Average shielding:  7097.281543274244\
 Average damage:  14257.66527632951\
-Average damage taken:  15570.332638164755\
+Average damage taken:  15570.332638164755
 
 Surprisingly, the MMR gain is actually worse when Camilo is paired with a frontliner and a backliner as opposed to 2 backliners. This indicates that Camilo enables the average backliner more than the average other frontliner enables Camilo. This is supported by the average MMR gain for triple backline teams being only 55.62 (558 samples), which shows that having at least one frontliner to absorb damage helps most backliners in the ranked setting.\
