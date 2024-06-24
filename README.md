@@ -11,7 +11,7 @@ Using the Eternal Return API, 2947 games were downloaded from top Camilo players
 
 Characters were then classified into the main role they may play in team compositions with Camilo. The list of all character classifications is as follows:
 
-01 (Jackie): Diver
+01 (Jackie): Diver\\
 02 (Aya): Backline
 03 (Fiora): Frontline
 04 (Magnus): Frontline
