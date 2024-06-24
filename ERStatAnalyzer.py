@@ -116,12 +116,10 @@ def hasBackline(team):
     return False
     
 def hasSupportAdjacent(team):
-    if classDict[team[0]['characterNum']] == "Support" or classDict[team[1]['characterNum']] == "Support" or classDict[team[2]['characterNum']] == "Support":
-        return True
-    if team[0]['characterNum'] == 51 or team[1]['characterNum'] == 51 or team[2]['characterNum'] == 51:
-        return True
-    if team[0]['characterNum'] == 52 or team[1]['characterNum'] == 52 or team[2]['characterNum'] == 52:
-        return True
+    # if team[0]['characterNum'] == 51 or team[1]['characterNum'] == 51 or team[2]['characterNum'] == 51:
+        # return True
+    # if team[0]['characterNum'] == 52 or team[1]['characterNum'] == 52 or team[2]['characterNum'] == 52:
+        # return True
     if team[0]['characterNum'] == 62 or team[1]['characterNum'] == 62 or team[2]['characterNum'] == 62:
         return True
     return False
@@ -133,6 +131,9 @@ def onlyFrontline(team):
        return True
     return False
 
+def onlyBackline(team):
+    return classDict[team[0]['characterNum']] == "Backline" and classDict[team[1]['characterNum']] == "Backline" and classDict[team[2]['characterNum']] == "Backline"
+    
 def doubleBackline(team):
     count = 0
     if classDict[team[0]['characterNum']] == "Backline":
@@ -159,8 +160,26 @@ def doubleFrontline(team):
     
     return count == 2
     
+def doubleSupport(team):
+    count = 0
+    if classDict[team[0]['characterNum']] == "Support":
+        count += 1
+
+    if classDict[team[1]['characterNum']] == "Support":
+        count += 1
+    
+    if classDict[team[2]['characterNum']] == "Support":
+        count += 1
+    
+    return count == 2
+
 def camiloWithSupport(team):
     if hasCamilo(team) and hasSupport(team):
+        return True
+    return False
+    
+def camiloWithDoubleSupport(team):
+    if hasCamilo(team) and doubleSupport(team):
         return True
     return False
     
@@ -203,9 +222,9 @@ def averageStatValue(stats, fieldName):
 
 #other relevant conditions include "versionMajor", "versionMinor", "serverName"
 def playerConditions(player): #character is camilo, is ranked, and is season 4
-    return player['characterNum'] == 39 and player['matchingMode'] == 3 and player['seasonId'] == 25
+    return classDict[player['characterNum']] == "Backline" and player['matchingMode'] == 3 and player['seasonId'] == 25
 
-stats = getStatsWithConditions(doubleFrontlineBackline, playerConditions)
+stats = getStatsWithConditions(onlyBackline, playerConditions)
 
 print("Total number of games meeting criteria: ", len(stats))
 print("Average game rank: ", averageStatValue(stats, "gameRank"))
